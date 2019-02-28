@@ -1,0 +1,10 @@
+<h1>ARTISTS 👩‍🎨🎨🖼🖌</h1>
+<%= button_to("CREATE NEW ARTIST", new_artist_path, :method => :get) %>
+
+<% @artists.each do |artist| %>
+<h3>NAME:</h3>
+  <%= link_to artist.name, artist_path(artist) %>
+<h3>HOMETOWN:</h3>
+  <%= artist.hometown %>
+  <br>
+<% end %>

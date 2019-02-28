@@ -1,0 +1,10 @@
+<h1>THIS ARTIST 👩‍🎨🎨🖼🖌</h1>
+<%= button_to("CREATE NEW GRAFFITTI", new_graffitti_path, :method => :get) %>
+<%= button_to("EDIT THIS ARTIST", edit_artist_path(@artist), :method => :get) %>
+<%= button_to("DELETE THIS ARTIST", @artist, :method => :delete) %>
+
+<h3>NAME:</h3>
+<%= @artist.name %>
+<br>
+<h3>HOMETOWN:</h3>
+<%= @artist.hometown %>

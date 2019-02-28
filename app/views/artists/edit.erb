@@ -1,0 +1,10 @@
+<h1>EDIT ARTIST 🎨</h1>
+<%= form_for @artist do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
+  <br>
+  <%= f.submit %>
+<% end %>

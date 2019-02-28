@@ -1,0 +1,16 @@
+<h1>EDIT THIS ART🎨⭐️🖌💫</h1>
+<%= form_for @graffitti do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <br>
+  <%= f.label :Which_Artist? %>
+  <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+  <br>
+  <%= f.submit %>
+<% end %>

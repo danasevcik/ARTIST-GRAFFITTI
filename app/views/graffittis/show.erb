@@ -1,0 +1,14 @@
+<h1>THIS ART✨</h1>
+<%= button_to("EDIT THIS ART", edit_graffitti_path(@graffitti), :method => :get) %>
+<%= button_to("DELETE THIS ART", @destroy, :method => :delete) %>
+<h3>TITLE:</h3>
+<%= @graffitti.title %>
+<br>
+<h3>DESCRIPTION:</h3>
+<%= @graffitti.description %>
+<br>
+<h3>LOCATION:</h3>
+<%= @graffitti.location %>
+<br>
+<h3>ARTIST:</h3>
+<%= link_to @artist.name, artist_path(@artist) %>

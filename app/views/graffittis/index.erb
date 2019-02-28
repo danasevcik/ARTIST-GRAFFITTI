@@ -1,0 +1,7 @@
+<h1>ALL THE ART🌍🎨⭐️</h1>
+<%= button_to("CREATE NEW ART", new_graffitti_path, :method => :get) %>
+<% @graffittis.each do |graf| %>
+
+  <%= link_to graf.title, graffitti_path(graf) %>
+
+<% end %>
